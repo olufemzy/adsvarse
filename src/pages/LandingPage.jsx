@@ -104,7 +104,7 @@ const LandingPage = () => {
                      Advarse gives you easy and flexible campaign management options and a variety of ad 
                      placements designed to drive visibility.
                   </p>
-                  <img src="/services.png" alt="services" data-aos="zoom-in"/>
+                  <img src="/services.jpg" alt="services" data-aos="zoom-in"/>
                </div>
                <div className='flex flex-col space-y-3 md:w-1/3'>
                   <div className='flex flex-row items-start space-x-5' data-aos="fade-up">
