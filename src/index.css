@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+/* @import 'flowbite'; */
+@tailwind utilities;
+
+
+/* HERO SECTION */
+
+.hero{
+   background-image: url(/hero-bg.png);
+}
+.hero>div{
+   /* height: 500px; */
+   background: rgba(96, 96, 96, 0.169);
+   backdrop-filter: blur(2px);
+}
+.badge {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  padding: 15px 40px;
+  z-index: 1;
+}
+
+.badge::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background-color: #0F40B2; /* Blue */
+  transform: rotate(-3deg);
+  z-index: -1;
+}
+.badge::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background-color:#2196f3; /* Blue */
+  transform: rotate(-7deg);
+  z-index: -1;
+}
+
+/* RESULT SECTION */
+.section-head{
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center;
+   align-items: center; */
+   position: relative;
+   width: fit-content;
+   z-index: 1;
+}
+.section-head::before{
+   content: '';
+   inset: 0;
+   width: 45%;
+   height: 5px;
+   background: #f97316;
+   /*position: absolute; */
+   align-self: flex-end;
+
+}
+/* promoted ads selected */
+.carou{
+   scrollbar-width: none;
+}
