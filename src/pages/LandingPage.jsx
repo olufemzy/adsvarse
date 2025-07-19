@@ -19,16 +19,16 @@ const LandingPage = () => {
   }, []);
 
   const carouselImages = [
-   '/slide-item-1.png',
-   '/slide-item-2.png',
+   '/slide-item-1.jpg',
+   '/slide-item-2.jpg',
    '/slide-item-3.png',
-   '/slide-item-4.png',
-   '/slide-item-5.png',
-   '/slide-item-6.png',
-   '/slide-item-7.png',
-   '/slide-item-8.png',
-   '/slide-item-9.png',
-   '/slide-item-10.png',
+   '/slide-item-4.jpg',
+   '/slide-item-5.jpg',
+   '/slide-item-6.jpg',
+   '/slide-item-7.jpg',
+   '/slide-item-8.jpg',
+   '/slide-item-9.jpg',
+   '/slide-item-10.jpg',
   ]
 
   return (
