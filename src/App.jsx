@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import 'flowbite';
 import { Route, Routes } from 'react-router-dom'
 import Mainlayout from './layouts/Mainlayout'
 import LandingPage from './pages/LandingPage'

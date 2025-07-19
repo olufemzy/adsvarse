@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
-/* @import 'flowbite'; */
+@import 'flowbite';
 @tailwind utilities;
 
 
 /* HERO SECTION */
 
 .hero{
-   background-image: url(/hero-bg.jpg);
+   background-image: url(/hero-bg.png);
 }
 .hero>div{
    /* height: 500px; */
