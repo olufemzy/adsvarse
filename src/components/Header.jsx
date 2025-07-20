@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import DarkMode from './DarkMode';
 import { Link } from 'react-router-dom';
+import { initFlowbite } from 'flowbite';
+
 
 const Header = () => {
+  useEffect(() => {
+    initFlowbite();
+  }, []);
+  
   return (
     <>  
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
