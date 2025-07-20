@@ -13,7 +13,7 @@ const LandingPage = () => {
 
    useEffect(() => {
     Aos.init({
-      duration: 1000, // animation duration
+      duration: 1000,
       // once: true,     // whether animation should happen only once
     });
   }, []);
@@ -54,8 +54,8 @@ const LandingPage = () => {
 
       {/* RESULTS SECTION */}
       <div className=' md:mx-14' data-aos="zoom-in">
-         <h3 className=' section-head font-bold text-4xl text-gray-700 my-5 '>RESULTS</h3>
-         <div className='flex flex-col md:flex-row justify-center md:items-center md:justify-between md:space-x-5 md:h-52 bg-gray-100 '>
+         <h3 className=' max-md:mx-3 section-head font-bold text-4xl text-gray-700 my-5 '>RESULTS</h3>
+         <div className='px-3 flex flex-col md:flex-row justify-center md:items-center md:justify-between md:space-x-5 md:h-52 bg-gray-100 '>
             <div className='flex flex-row items-center md:w-1/4 max-md:my-5'>
                <h1 className='font-bold text-5xl'>
                   <span className='text-blue-600'>$2M</span>
@@ -104,7 +104,7 @@ const LandingPage = () => {
                      Advarse gives you easy and flexible campaign management options and a variety of ad 
                      placements designed to drive visibility.
                   </p>
-                  <img src="/services.png" alt="services" data-aos="zoom-in"/>
+                  <img src="/services.jpg" alt="services" data-aos="zoom-in"/>
                </div>
                <div className='flex flex-col space-y-3 md:w-1/3'>
                   <div className='flex flex-row items-start space-x-5' data-aos="fade-up">
@@ -112,7 +112,7 @@ const LandingPage = () => {
                         <FaHdd color='white'/>
                      </span>
                      <div>
-                        <h3 className='font-semibold'>Marketing Strategy</h3>
+                        <h3 className='md:font-semibold font-bold'>Marketing Strategy</h3>
                         <p>Using the power of analytics and AI, we tailor 
                            campaigns that deliver measurable 
                            results and reach your target audience effectively.</p>
@@ -123,7 +123,7 @@ const LandingPage = () => {
                         <HiLightBulb color='white'/>
                      </span>
                      <div>
-                        <h3 className='font-semibold'>Creative Content </h3>
+                        <h3 className='md:font-semibold font-bold'>Creative Content </h3>
                         <p>
                            Using the power of analytics and AI, we tailor campaigns that deliver 
                            measurable results and reach your target audience effectively.
@@ -135,7 +135,7 @@ const LandingPage = () => {
                         <LuChartNoAxesCombined color='white'/>
                      </span>
                      <div>
-                        <h3 className='font-semibold'>SEO & SEM Optimization</h3>
+                        <h3 className='md:font-semibold font-bold'>SEO & SEM Optimization</h3>
                         <p>
                            Using the power of analytics and AI, we tailor campaigns that 
                            deliver measurable results and reach your target audience effectively.
@@ -147,7 +147,7 @@ const LandingPage = () => {
                         <TfiUser  color='white'/>
                      </span>
                      <div>
-                        <h3 className='font-semibold'>Social Media Management</h3>
+                        <h3 className='md:font-semibold font-bold'>Social Media Management</h3>
                         <p>
                            Using the power of analytics and AI, we tailor campaigns that deliver
                            measurable results and reach your target audience effectively.
