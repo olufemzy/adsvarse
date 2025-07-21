@@ -35,7 +35,7 @@ const LandingPage = () => {
    <>
       {/* HERO SECTION */}
       <div className='hero bg-cover bg-no-repeat bg-center' data-aos="zoom-in-down">
-         <div className='max-md:py-5 md:h-[500px] flex items-center '>
+         <div className='max-md:py-5 md:h-[600px] flex items-center '>
             <div className=' p-2 md:p-5 mx-3 md:w-2/4 md:mx-auto my-0 text-center flex flex-col items-center justify-center'>
                <h1 className='text-white text-6xl font-bold'>
                   Promote Your <span className='badge'>Brand</span> where it matters most
@@ -45,15 +45,15 @@ const LandingPage = () => {
                   Let us help you shine brighter in the digital landscape.
                </p>
                <div className='flex flex-row space-x-2 my-4'>
-                  <Link to='/' className='bg-white rounded-md p-3'>Get Started</Link>
-                  <Link to='/' className='bg-transparent border-e-white border-2 p-3 rounded-md text-white'>Learn more</Link>
+                  <Link to='/' className='bg-white rounded-md p-3 px-6'>Get Started</Link>
+                  <Link to='/' className='bg-transparent border-e-white border-2 p-3 rounded-md text-white px-6'>Learn more</Link>
                </div>
             </div>
          </div>
       </div>
 
       {/* RESULTS SECTION */}
-      <div className=' md:mx-14' data-aos="zoom-in">
+      <div className=' md:mx-[7%]' data-aos="zoom-in">
          <h3 className=' max-md:mx-3 section-head font-bold text-4xl text-gray-700 my-5 '>RESULTS</h3>
          <div className='px-3 flex flex-col md:flex-row justify-center md:items-center md:justify-between md:space-x-5 md:h-52 bg-gray-100 '>
             <div className='flex flex-row items-center md:w-1/4 max-md:my-5'>
@@ -81,18 +81,18 @@ const LandingPage = () => {
       </div>
 
       {/* PROMOTED ADS SLIDES */}
-      <div className='mx-3 md:mx-16 my-9' data-aos="zoom-in-left">      
+      <div className='mx-3 md:mx-[7%] my-9' data-aos="zoom-in-left">      
          <h3 className=' section-head font-bold text-4xl text-gray-700 my-5 '>Promoted Ads Slides</h3>
       </div>
-      <div className='carou flex space-x-2 w-full overflow-x-auto scroll-hidden whitespace-nowrap p-4 scroll-images'>
+      <div className='carou flex space-x-2 w-full overflow-x-auto scroll-hidden whitespace-nowrap p-4 '>
          {carouselImages.map((images, index) => (
             <img src={images} key={index} alt=""  className='w-40 h-48 object-cover rounded' />
          ))}
       </div>
 
       {/* OUR SERVICE SECTION */}
-      <div className='bg-gray-100 py-16 mt-10  '>
-         <div className='mx-3 md:mx-16'>      
+      <div className='bg-gray-100 py-16 mt-10  'id='services'>
+         <div className='mx-3 md:mx-[7%]'>      
             <h3 className=' section-head font-bold text-4xl text-gray-700 mb-10 ' data-aos="zoom-in-left">
                Our Services
             </h3>
@@ -159,16 +159,59 @@ const LandingPage = () => {
          </div>
       </div>
       {/* PREOVEN RESULTS */}
-      {/* <div className='mx-3 md:mx-16 py-16'>
+      <div className='mx-3 md:mx-[7%] py-16'>
          <h3 className=' section-head font-bold text-4xl text-gray-700 mb-10 ' data-aos="zoom-in-left">
             Proven Results
          </h3>
-         catalog
-         <div>
-            <div className='flex flex-row items-center space-x-4 w-1/2'>
-               <img src="/slide-item-3.png" alt="" className='object-cover w-1/2 h-[400px]' />
+         {/* catalog */}
+         {/* CATALOG 1 */}
+         <div className=' flex flex-col md:flex-row md:space-x-9 max-md:space-y-2 mb-2'>
+            <div className='flex flex-row items-center md:w-1/2 space-x-5 ' data-aos="flip-right">
+               <img src="/blog-1.jpg" alt="blog-1" className='object-cover w-1/2 h-[400px]' />
                <div className='w-1/2'>
-                  <h3 className=''>Clothing/Fashion Brand.</h3>
+                  <h3 className=' text-3xl mb-4 '>Clothing / Fashion Brand.</h3>
+                  <p className='mb-5'>
+                     It has survived not only five centuries, but also the leap into electronic 
+                     typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                     with the release of Letraset sheets containing Lorem Ipsum passages, and 
+                     more recently with desktop publishing software.
+                  </p>
+                  <Link to='/' className='font-semibold'>Read More </Link>
+               </div>
+            </div>
+            <div className='flex flex-row items-center md:w-1/2 space-x-5 ' data-aos="flip-right">
+               <img src="/blog-2.jpg" alt="blog-2" className='object-cover w-1/2 h-[400px]' />
+               <div className='w-1/2'>
+                  <h3 className=' text-3xl mb-4 '>Luxury Lady Bags</h3>
+                  <p className='mb-5'>
+                     It has survived not only five centuries, but also the leap into electronic 
+                     typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                      with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                       recently with desktop publishing software.
+                  </p>
+                  <Link to='/' className='font-semibold'>Read More </Link>
+               </div>
+            </div>
+         </div>
+         {/* CATALOG 2 */}
+         <div className=' flex flex-col md:flex-row md:space-x-9 max-md:space-y-2' data-aos="flip-right">
+            <div className='flex flex-row items-center md:w-1/2 space-x-5 '>
+               <img src="/blog-3.jpg" alt="blog-3" className='object-cover w-1/2 h-[400px]' />
+               <div className='w-1/2'>
+                  <h3 className=' text-3xl mb-4 '>High Speed Game Laptop</h3>
+                  <p className='mb-5'>
+                     It has survived not only five centuries, but also the leap into electronic 
+                     typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                     with the release of Letraset sheets containing Lorem Ipsum passages, and 
+                     more recently with desktop publishing software.
+                  </p>
+                  <Link to='/' className='font-semibold'>Read More </Link>
+               </div>
+            </div>
+            <div className='flex flex-row items-center md:w-1/2 space-x-5 ' data-aos="flip-right">
+               <img src="/blog-4.jpg" alt="blog-4" className='object-cover w-1/2 h-[400px]' />
+               <div className='w-1/2'>
+                  <h3 className=' text-3xl mb-4 '>Beautiful Hair Products.</h3>
                   <p className='mb-5'>
                      It has survived not only five centuries, but also the leap into electronic 
                      typesetting, remaining essentially unchanged. It was popularised in the 1960s 
@@ -179,8 +222,70 @@ const LandingPage = () => {
                </div>
             </div>
          </div>
-      </div> */}
+         
+      </div>
 
+      {/* PARTNERS */}
+      <div className='mx-3 md:mx-[7%]'>
+         <h3 className=' section-head font-bold text-4xl text-gray-700 mb-10 ' data-aos="zoom-in-left">
+            Partners
+         </h3>
+      </div>
+      <div className='bg-gray-100'>
+         <div className='mx-3 md:mx-[7%] flex flex-col md:flex-row max-md:space-y-10 md:space-x-10 pt-5 pb-32'>
+            <div className='md:w-1/2 flex flex-col items-center' data-aos="zoom-in-right">
+               <img src="/partner-1.jpg" alt="partner1" className='w-[80%] relative z-10'/>
+               <div className='p-badge flex flex-col relative z-[1] '>
+                  <div className='bg-white px-5 py-8 '>
+                     <p className='mb-6 font-semibold'>
+                        "Their approach to social media marketing completely transformed our brand’s online presence. 
+                        We couldn’t be happier with the results."
+                     </p>
+                     <h3>— Afolayan Kunle, Founder GreenSpace</h3>
+                  </div>
+               </div>
+            </div>
+            <div className='md:w-1/2 flex flex-col items-center' data-aos="zoom-in-left">
+               <img src="/partner-2.jpg" alt="partner2" className='w-[80%] relative z-10'/>
+               <div className='p-badge flex flex-col relative z-[1] '>
+                  <div className='bg-white px-5 py-8 '>
+                     <p className='mb-6 font-semibold'>
+                     "ADSVARSE HUB helped us increase our web traffic by 300% in just six months! 
+                     Their team is responsive, creative, and truly invested in our success."
+                  </p>
+                  <h3>— Babatunde Deola, CFO Pulse NG</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      {/* CALL TO ACTION SECTION */}
+      <div className='bg-[#E2F2FF] py-14'>
+         <div className='mx-3 md:mx-[7%] flex flex-col md:flex-row md:space-x-5 max-md:space-y-5 justify-between items-center'>
+            <div>
+               <h1 className='font-bold text-3xl mb-[5px]'>Ready to grow your business?</h1>
+               <p className='mb-2'>Let Adsvarse help you reach your digital goals.</p>
+               <Link to='/' className='bg-[#F39B0B] text-white p-2 px-7 rounded-md inline-block'>Contact Us</Link>
+            </div>
+            <img src="/cta.jpg" alt="cta" className='md:w-1/2' data-aos="zoom-in"/>
+         </div>
+      </div>
+
+      {/* TESTIMONIAL SECTION */}
+      <div>
+         <div className='mx-3 md:mx-[7%] py-16'>
+            <div>
+               <h3 className=' section-head font-bold text-4xl text-gray-700 mb-3' data-aos="zoom-in-left">
+                  Testimonial
+               </h3>
+               <p>
+                  Don't just take our word for it - see what actual users of our service have to say about 
+                  their experience.
+               </p>
+            </div>
+         </div>
+      </div>
    </>
   )
 }

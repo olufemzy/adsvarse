@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-@import 'flowbite';
+/* @import 'flowbite'; */
 @tailwind utilities;
 
 
@@ -63,4 +63,24 @@
 /* promoted ads selected */
 .carou{
    scrollbar-width: none;
+}
+/* partners */
+.p-badge::after{
+   content: '';
+   inset: 0;
+   background: #E98103;
+   position: absolute;
+   transform: translate(30px, 30px) rotate(4deg);
+   z-index: -2;
+}
+
+@media screen and (max-width: 768px) {
+   .p-badge::after{
+   content: '';
+   inset: 0;
+   background: #E98103;
+   position: absolute;
+   transform: translate(0px, 10px) rotate(5deg);
+   z-index: -2;
+}
 }
