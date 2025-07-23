@@ -6,6 +6,25 @@ import { FaHdd } from "react-icons/fa";
 import { HiLightBulb } from "react-icons/hi";
 import { LuChartNoAxesCombined } from 'react-icons/lu';
 import { TfiUser } from 'react-icons/tfi';
+import hero from '../assets/hero-bg.jpg';
+import item1 from '../assets/slide-item-1.jpg';
+import item2 from '../assets/slide-item-2.jpg';
+import item3 from '../assets/slide-item-3.jpg';
+import item4 from '../assets/slide-item-4.jpg';
+import item5 from '../assets/slide-item-5.jpg';
+import item6 from '../assets/slide-item-6.jpg';
+import item7 from '../assets/slide-item-7.jpg';
+import item8 from '../assets/slide-item-8.jpg';
+import item9 from '../assets/slide-item-9.jpg';
+import item10 from '../assets/slide-item-10.jpg';
+import service from '../assets/services.jpg'
+import blog1 from '../assets/blog-1.jpg';
+import blog2 from '../assets/blog-2.jpg';
+import blog3 from '../assets/blog-3.jpg';
+import blog4 from '../assets/blog-4.jpg';
+import partner1 from "../assets/partner-1.jpg";
+import partner2 from "../assets/partner-2.jpg";
+import cta from '../assets/cta.jpg'
 
 
 
@@ -19,22 +38,22 @@ const LandingPage = () => {
   }, []);
 
   const carouselImages = [
-   '/slide-item-1.jpg',
-   '/slide-item-2.jpg',
-   '/slide-item-3.jpg',
-   '/slide-item-4.jpg',
-   '/slide-item-5.jpg',
-   '/slide-item-6.jpg',
-   '/slide-item-7.jpg',
-   '/slide-item-8.jpg',
-   '/slide-item-9.jpg',
-   '/slide-item-10.jpg',
+   item1, 
+   item2, 
+   item3, 
+   item4, 
+   item5, 
+   item6, 
+   item7, 
+   item8, 
+   item9, 
+item10,
   ]
 
   return (
    <>
       {/* HERO SECTION */}
-      <div className='hero bg-cover bg-no-repeat bg-center' data-aos="zoom-in-down">
+      <div className='hero bg-cover bg-no-repeat bg-center' style={{backgroundImage: `url(${hero})`}} data-aos="zoom-in-down">
          <div className='max-md:py-5 md:h-[600px] flex items-center '>
             <div className=' p-2 md:p-5 mx-3 md:w-2/4 md:mx-auto my-0 text-center flex flex-col items-center justify-center'>
                <h1 className='text-white text-6xl font-bold'>
@@ -104,7 +123,7 @@ const LandingPage = () => {
                      Advarse gives you easy and flexible campaign management options and a variety of ad 
                      placements designed to drive visibility.
                   </p>
-                  <img src="/services.jpg" alt="services" data-aos="zoom-in"/>
+                  <img src={service} alt="services" data-aos="zoom-in"/>
                </div>
                <div className='flex flex-col space-y-3 md:w-1/3'>
                   <div className='flex flex-row items-start space-x-5' data-aos="fade-up">
@@ -167,7 +186,7 @@ const LandingPage = () => {
          {/* CATALOG 1 */}
          <div className=' flex flex-col md:flex-row md:space-x-9 max-md:space-y-2 mb-2'>
             <div className='flex flex-row items-center md:w-1/2 space-x-5 ' data-aos="flip-right">
-               <img src="/blog-1.jpg" alt="blog-1" className='object-cover w-1/2 h-[400px]' />
+               <img src={blog1} alt="blog-1" className='object-cover w-1/2 h-[400px]' />
                <div className='w-1/2'>
                   <h3 className=' text-3xl mb-4 '>Clothing / Fashion Brand.</h3>
                   <p className='mb-5'>
@@ -180,7 +199,7 @@ const LandingPage = () => {
                </div>
             </div>
             <div className='flex flex-row items-center md:w-1/2 space-x-5 ' data-aos="flip-right">
-               <img src="/blog-2.jpg" alt="blog-2" className='object-cover w-1/2 h-[400px]' />
+               <img src={blog2} alt="blog-2" className='object-cover w-1/2 h-[400px]' />
                <div className='w-1/2'>
                   <h3 className=' text-3xl mb-4 '>Luxury Lady Bags</h3>
                   <p className='mb-5'>
@@ -196,7 +215,7 @@ const LandingPage = () => {
          {/* CATALOG 2 */}
          <div className=' flex flex-col md:flex-row md:space-x-9 max-md:space-y-2' data-aos="flip-right">
             <div className='flex flex-row items-center md:w-1/2 space-x-5 '>
-               <img src="/blog-3.jpg" alt="blog-3" className='object-cover w-1/2 h-[400px]' />
+               <img src={blog3} alt="blog-3" className='object-cover w-1/2 h-[400px]' />
                <div className='w-1/2'>
                   <h3 className=' text-3xl mb-4 '>High Speed Game Laptop</h3>
                   <p className='mb-5'>
@@ -209,7 +228,7 @@ const LandingPage = () => {
                </div>
             </div>
             <div className='flex flex-row items-center md:w-1/2 space-x-5 ' data-aos="flip-right">
-               <img src="/blog-4.jpg" alt="blog-4" className='object-cover w-1/2 h-[400px]' />
+               <img src={blog4} alt="blog-4" className='object-cover w-1/2 h-[400px]' />
                <div className='w-1/2'>
                   <h3 className=' text-3xl mb-4 '>Beautiful Hair Products.</h3>
                   <p className='mb-5'>
@@ -234,7 +253,7 @@ const LandingPage = () => {
       <div className='bg-gray-100'>
          <div className='mx-3 md:mx-[7%] flex flex-col md:flex-row max-md:space-y-10 md:space-x-10 pt-5 pb-32'>
             <div className='md:w-1/2 flex flex-col items-center' data-aos="zoom-in-right">
-               <img src="/partner-1.jpg" alt="partner1" className='w-[80%] relative z-10'/>
+               <img src={partner1}  alt="partner1" className='w-[80%] relative z-10'/>
                <div className='p-badge flex flex-col relative z-[1] '>
                   <div className='bg-white px-5 py-8 '>
                      <p className='mb-6 font-semibold'>
@@ -246,7 +265,7 @@ const LandingPage = () => {
                </div>
             </div>
             <div className='md:w-1/2 flex flex-col items-center' data-aos="zoom-in-left">
-               <img src="/partner-2.jpg" alt="partner2" className='w-[80%] relative z-10'/>
+               <img src={partner2} alt="partner2" className='w-[80%] relative z-10'/>
                <div className='p-badge flex flex-col relative z-[1] '>
                   <div className='bg-white px-5 py-8 '>
                      <p className='mb-6 font-semibold'>
@@ -268,7 +287,7 @@ const LandingPage = () => {
                <p className='mb-2'>Let Adsvarse help you reach your digital goals.</p>
                <Link to='/' className='bg-[#F39B0B] text-white p-2 px-7 rounded-md inline-block'>Contact Us</Link>
             </div>
-            <img src="/cta.jpg" alt="cta" className='md:w-1/2' data-aos="zoom-in"/>
+            <img src={cta} alt="cta" className='md:w-1/2' data-aos="zoom-in"/>
          </div>
       </div>
 

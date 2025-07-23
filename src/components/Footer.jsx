@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import footerLogo from '../assets/footer-logo.png'
 
 const Footer = () => {
   let year = new Date().getFullYear()
@@ -11,7 +12,7 @@ const Footer = () => {
       <div className='md:mx-[7%] flex flex-col md:flex-row justify-between max-md:items-center max-md:text-center max-md:space-y-5 mb-6'>
 
         <Link to='/'>
-          <img src="/footer-logo.png" alt="footer-logo" className='h-fit md:w-[250px] w-48 '  />
+          <img src={footerLogo} alt="footer-logo" className='h-fit md:w-[250px] w-48 '  />
         </Link>
 
         <ul className='text-white'>

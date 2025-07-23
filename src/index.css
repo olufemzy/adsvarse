@@ -6,9 +6,6 @@
 
 /* HERO SECTION */
 
-.hero{
-   background-image: url(/hero-bg.jpg  );
-}
 .hero>div{
    /* height: 500px; */
    background: rgba(96, 96, 96, 0.169);
