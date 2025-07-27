@@ -2,14 +2,11 @@ import React, { useState } from 'react'
 import Quote from '../components/Quote'
 import { Link } from 'react-router-dom'
 import { RiArrowLeftSLine } from 'react-icons/ri'
+import google from '../assets/google-icon.png'
 
-const Signin = () => {
-   const [visible, setVisible] = useState(false)
-   const handleVisibility = () => setVisible(!visible)
-
-   
+const Signup = () => {
   return (
-   <div className='bg-gray-100 py-10 md:py-20 signin'>
+   <div className='bg-gray-100 py-10 md:py-20 signup'>
       <div className='mx-3 md:mx-[7%]'>
          <div className='flex flex-row justify-between md:space-x-20'>
             <Quote
@@ -52,8 +49,8 @@ const Signin = () => {
                   </button>
                   <p className='text-center mb-2'>or</p>
                </form>
-               <button className='bg-[#0072E3] text-white w-full py-2 rounded-md'>
-                  Register with Google
+               <button className=' w-full py-2 rounded-md google flex items-center justify-center'>
+                  <img src={google} alt="google-icon" className='mr-4' /> Register with Google
                </button>
             </div>
          </div>
@@ -62,4 +59,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default Signup

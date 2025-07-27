@@ -70,14 +70,23 @@
    transform: translate(30px, 30px) rotate(4deg);
    z-index: -2;
 }
+.signup input::placeholder{
+   color: gray;
+}
+.signup .checkbox{
+   accent-color: blue;
+}
+.signup .google{
+   box-shadow: 1px 2px 3px rgb(99, 99, 99) ;
+}
 
 @media screen and (max-width: 768px) {
-   .p-badge::after{
-   content: '';
-   inset: 0;
-   background: #E98103;
-   position: absolute;
-   transform: translate(0px, 10px) rotate(5deg);
-   z-index: -2;
-}
+      .p-badge::after{
+      content: '';
+      inset: 0;
+      background: #E98103;
+      position: absolute;
+      transform: translate(0px, 10px) rotate(5deg);
+      z-index: -2;
+   }
 }

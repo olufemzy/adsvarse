@@ -64,7 +64,7 @@ item10,
                   Let us help you shine brighter in the digital landscape.
                </p>
                <div className='flex flex-row space-x-2 my-4'>
-                  <Link to='/' className='bg-white rounded-md p-3 px-6'>Get Started</Link>
+                  <Link to='/getstarted' className='bg-white rounded-md p-3 px-6'>Get Started</Link>
                   <Link to='/' className='bg-transparent border-e-white border-2 p-3 rounded-md text-white px-6'>Learn more</Link>
                </div>
             </div>
