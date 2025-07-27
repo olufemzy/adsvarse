@@ -33,7 +33,7 @@ const LandingPage = () => {
    useEffect(() => {
     Aos.init({
       duration: 1000,
-      // once: true,     // whether animation should happen only once
+      // once: true,     //  animation should happen only once
     });
   }, []);
 
